@@ -1,0 +1,31 @@
+{
+	"name": "zonalhost/hostedsites",
+	"description": "Create multisite network using Laravel framework and ZonalHost platform. Please visit https://www.zonalhost.com for more information.",
+	"type": "library",
+	"license": "MIT",
+	"authors": [{
+		"name": "Pramod Kumar",
+		"email": "zonalhost@gmail.com"
+	}],
+	"minimum-stability": "stable",
+	"require": {
+		"php": ">=7.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"HostedSites\\": "src/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"HostedSites\\Services\\HostedSitesServiceProvider"
+			]
+		}
+	},
+	"config": {
+		"preferred-install": "dist",
+		"sort-packages": true,
+		"optimize-autoloader": true
+	}
+}
